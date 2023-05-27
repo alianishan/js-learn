@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styled.css">
+	<link rel="stylesheet" href="newcss.css">
+    <title>Document</title>
+	<style>
+	
+	nav ul {
+    /* display: inline-block; */
+    list-style-type: none;
+	
+    margin-bottom: 911px;
+    padding: 0;
+    overflow: hidden;
+    background: black;
+	
+	
+    
+  }
+  
+  .nav-bar{
+    display: flex;
+    align-items: left;
+    padding-left:  20px ;
+    padding-right: 0px;
+    padding-top: 10px;
+    width: 100%;
+	
+   
+
+
+  }
+
+  nav{
+    flex: 1;
+    text-align: left;
+
+  }
+  li {
+    /* float:left; */
+    display: inline-block;
+    font-size: 20px;
+    margin-right: 70px;
+    
+  }
+  
+  li a {
+    display: block;
+    color: white;
+	opacity:0.7;s
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+   li a:hover {
+	   background-color: gray;
+    
+  }
+  
+  </style>
+</head>
+<body>
+<nav class="navbar">
+    <ul>
+        <li><a class="active" href="./home.html">Home</a></li>
+        <li><a href="indddd.html">Sign-In</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+      </nav>
+        <div class="container">
+    
+            <div class="form login">
+                <span class="title">SignUp</span>
+
+                <form action="indddd.html" name="loginform">
+                    <div class="input-field">
+                        <input type="text" name="name" id="name" placeholder="Enter Your Email" required>
+                        <i class="fa fa-user"></i>
+                    </div>
+                    <div class="input-field">
+                        <input type="" name="email" id="email" placeholder="Enter Your Email" required>
+                        <i class="fa fa-envelope"></i>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" name="password" id="pwd" placeholder="Enter Your Password" required>
+                        <i class="fa fa-lock" ></i>
+                        <i class="fa fa-eye-slash showhidepw"></i>
+                    </div><br>
+                    <div class="checkbox-text">
+                        <div class="checkbox-content">
+                            <input type="checkbox" id="logcheck">
+                            <label for="locheck" class="text">Remeber me</label>
+                        </div>
+						
+                    </div>
+                    <div class="input-field button">
+                        <input type="submit" value="SubmitData" onclick="signup()">
+                    </div>
+					
+				</form>	
+          	
+                
+                    
+				
+		</div>  
+        <script>
+            console.log("hey");
+            function signup(){
+                             var name = document.getElementById("name").value;
+                             var email = document.getElementById("email").value;
+                             var pass = document.getElementById("pwd").value;
+
+
+                             localStorage.setItem("name1",name)
+                             localStorage.setItem("email1",email)
+                             localStorage.setItem("pass1",pass)
+
+             }
+        </script>   
+</body>
+</html>
